@@ -55,19 +55,6 @@ The proposed workflow includes:
 
 ## 🛠️ Technology Stack
 
-| Component        | Technology                 |
-| ---------------- | -------------------------- |
-| Frontend         | React, TypeScript, Vite    |
-| Styling          | Tailwind CSS               |
-| Backend          | Python, FastAPI            |
-| Database Layer   | SQLAlchemy                 |
-| OCR              | Tesseract OCR, Pytesseract |
-| Image Processing | OpenCV                     |
-| Database         | To be documented           |
-| AI/ML            | Under development          |
-
-## 🛠️ Technology Stack
-
 | **Component** | **Technology** |
 |---|---|
 | Frontend | React, TypeScript, Vite |
