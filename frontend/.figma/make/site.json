@@ -1,0 +1,10 @@
+{
+  "description": "Streamline land record management in India with an AI-powered platform for landowners and digitization officers, ensuring efficient document validation and access to verified digital records.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

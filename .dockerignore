@@ -1,0 +1,8 @@
+**/node_modules
+**/dist
+**/__pycache__
+**/*.db
+.git
+backend/storage
+backend/eval/samples
+docker/.env

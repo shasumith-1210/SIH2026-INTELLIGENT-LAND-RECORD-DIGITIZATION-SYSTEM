@@ -1,0 +1,37 @@
+# Run from this folder:  cp .env.example .env  (edit the values)  &&  docker compose up --build
+# Web: http://localhost:8080   API: http://localhost:8000/docs
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?set DB_PASSWORD in docker/.env}
+      POSTGRES_DB: intelliland
+    volumes: [db_data:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d intelliland"]
+      interval: 5s
+      retries: 20
+
+  api:
+    build: { context: .., dockerfile: docker/Dockerfile.backend }
+    depends_on: { db: { condition: service_healthy } }
+    environment:
+      JWT_SECRET: ${JWT_SECRET:?set JWT_SECRET in docker/.env}
+      DATABASE_URL: postgresql+psycopg2://postgres:${DB_PASSWORD}@db:5432/intelliland
+      USERS_JSON: '[{"username":"officer1","password":"${OFFICER_PASSWORD:?set OFFICER_PASSWORD}","role":"officer"},{"username":"admin1","password":"${ADMIN_PASSWORD:?set ADMIN_PASSWORD}","role":"admin"}]'
+      CORS_ORIGINS: http://localhost:8080
+      DEV_OTP_LOG: "1"   # development only: OTPs are printed in `docker compose logs api` because no SMS provider is integrated
+    volumes: [storage:/data/storage]
+    ports: ["8000:8000"]
+
+  web:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.frontend
+      args: { VITE_API_BASE: "${PUBLIC_API_URL:-http://localhost:8000}" }
+    depends_on: [api]
+    ports: ["8080:80"]
+
+volumes:
+  db_data:
+  storage:

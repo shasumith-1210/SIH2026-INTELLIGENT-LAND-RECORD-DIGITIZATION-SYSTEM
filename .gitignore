@@ -1,0 +1,33 @@
+node_modules/
+dist/
+.env
+.env.local
+docker/.env
+*.db
+backend/storage/
+__pycache__/
+.pytest_cache/
+backend/eval/samples/
+backend/eval/realistic/
+*.log
+.DS_Store
+
+ # Python virtual environments
+.venv/
+venv/
+env/
+.venv-*/
+# Python generated files
+*.pyc
+*.pyo
+
+# IDE and OS files
+.vscode/
+.idea/
+Thumbs.db
+
+# Ignore all README files
+README*
+**/README*
+# Ignore all Markdown files
+*.md
