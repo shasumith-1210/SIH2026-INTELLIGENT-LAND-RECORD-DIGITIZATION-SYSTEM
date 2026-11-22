@@ -66,6 +66,20 @@ The proposed workflow includes:
 | Database         | To be documented           |
 | AI/ML            | Under development          |
 
+## 🛠️ Technology Stack
+
+| **Component** | **Technology** |
+|---|---|
+| Frontend | React, TypeScript, Vite |
+| Styling | Tailwind CSS |
+| Backend | Python, FastAPI |
+| ORM | SQLAlchemy |
+| Database | SQLite (Default), PostgreSQL (Supported) |
+| OCR | Tesseract OCR, Pytesseract |
+| Image Processing | OpenCV |
+| Database Migrations | Alembic |
+| Authentication | JWT (JSON Web Tokens) |
+
 ## 🏗️ System Architecture
 
 The application follows a frontend-backend architecture.
@@ -132,7 +146,7 @@ IntelliLand/
 ### 1. Clone the repository
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone https://github.com/shasumith-1210/SIH2026-INTELLIGENT-LAND-RECORD-DIGITIZATION-SYSTEM.git
 cd IntelliLand
 ```
 
@@ -187,10 +201,10 @@ IntelliLand is currently under development. Features and implementation details 
 
 ---
 
-\<p align="center">
-&#x20; Developed with dedication by \<strong>Team SIH Coders Creed\</strong>
-\</p>
+<p align="center">
+&#x20; Developed with dedication by <strong>Team SIH Coders Creed</strong>
+</p>
 
-\<p align="center">
+<p align="center">
 &#x20; Smart India Hackathon 2026 | Problem Statement 26018
-\</p>
+</p>
