@@ -1,7 +1,7 @@
 # IntelliLand – Intelligent Land Record Digitization System
 
 <p align="center">
-&#x20; \<strong>Smart India Hackathon 2026 | Problem Statement ID: 26018\</strong>
+&#x20; <strong>Smart India Hackathon 2026 | Problem Statement ID: 26018</strong>
 </p>
 
 <p align="center">
