@@ -1,12 +1,12 @@
 # IntelliLand – Intelligent Land Record Digitization System
 
-\<p align="center">
+<p align="center">
 &#x20; \<strong>Smart India Hackathon 2026 | Problem Statement ID: 26018\</strong>
-\</p>
+</p>
 
-\<p align="center">
+<p align="center">
 &#x20; An AI-powered platform for digitizing, extracting, organizing, and managing land records through OCR and intelligent document processing.
-\</p>
+</p>
 
 ---
 
