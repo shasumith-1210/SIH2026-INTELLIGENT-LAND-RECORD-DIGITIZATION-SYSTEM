@@ -176,7 +176,7 @@ npm run dev:full
 
 ## 👥 Team
 
-**Team Name:** SIH Coders Creed
+**Team Name:** Coder's Creed
 
 **Hackathon:** Smart India Hackathon 2026
 
